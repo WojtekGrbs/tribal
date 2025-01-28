@@ -102,11 +102,13 @@ setuptools.setup(
         "scikit-learn",
         "networkx",
       ],
-    download_url="https://google.com/",
-    url="https://google.com/",
+      
+    download_url="https://github.com/WojtekGrbs/tribal",
+    url="https://github.com/WojtekGrbs/tribal",
 
     project_urls={
-        "Documentation":      "https://google.com/",
+        "Source Code":        "https://github.com/WojtekGrbs/tribal",
+        "Benchmark Datasets": "https://clustering-benchmarks.gagolewski.com/",
     },
     include_package_data=True,
     classifiers=[
