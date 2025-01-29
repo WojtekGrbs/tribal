@@ -37,7 +37,7 @@ The package requires Python 3.8+ with dependiences listed bellow:
 
 All implemented algorithms can be imported via the path  `transatlantic.transductive_clustering`.  
 These are the classes `MSTL`, `GMKNN`, and `TDBSCAN`.
-```bash
+```python
 import tribal
 from tribal.transductive_clustering import MSTL , GMKNN , TDBSCAN
 
@@ -56,7 +56,7 @@ alg1.fit(X , y)
 ```
 
 To obtain the output labels of the algorithm, you should refer to the `labels_` attribute.
-```bash
+```python
 final_labels = alg1.labels_
 ```
 
@@ -71,7 +71,7 @@ final_labels = alg1.fit_predict(X , y)
 ### Additional functionalities related to algorithms
 
 In the case of graph algorithms, it is possible to gain insight into the algorithm's execution by generating a graph that represents the graph responsible for the specific stages of the program.
-```bash
+```python
 alg1.draw_transitional_graph("mst")
 alg1.draw_result_graph()
 ```
@@ -79,7 +79,7 @@ In the case of the first algorithm, a minimum spanning tree is generated based o
 - knn - k-nearest neighbors graph
 - mknn - mutual k-nearest neighbors graph
 - informative edges - represents a stage aimed at removing insignificant edges
-```bash
+```python
 alg2.draw_transitional_graph("knn") # Options : knn, gmknn ,informative_edges
 alg2.draw_result_graph()
 ```
