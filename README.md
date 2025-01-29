@@ -43,7 +43,7 @@ from tribal.transductive_clustering import MSTL , GMKNN , TDBSCAN
 
 alg1 = MSTL()
 alg2 = GMKNN(k=7)
-alg3 = TDBSCAN(eps=0.1, k=4 ,new_clusters = False)
+alg3 = TDBSCAN(eps=0.1, k=4, new_clusters=False)
 ```
 The process is analogous to the scikit-learn package and is identical for each of the implemented algorithms.  
 The user is required to provide data points as a list of lists or any other structure that can be cast to an object of the class `np.ndarray`, as well as initial labels as a one-dimensional list of integers (with the value `-1` used to indicate missing labels).  
