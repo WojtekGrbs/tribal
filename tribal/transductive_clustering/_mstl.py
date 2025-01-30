@@ -10,7 +10,7 @@ class MSTL(GraphBasedTransductiveEstimator):
     transitional_graphs_types = ("mst")
     def __init__(self):
         super().__init__()
-        self.transitional_graphs_ = {k: None for k in mstl.transitional_graphs_types}
+        self.transitional_graphs_ = {k: None for k in MSTL.transitional_graphs_types}
 
     def fit(self, X, y):
         super().fit(X, y)

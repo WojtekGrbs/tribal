@@ -18,8 +18,6 @@ import re
 ext_kwargs = dict(
     include_dirs=[np.get_include(),], #"tribal/algorithms/src/genieclust_mst_src", "../src/"],
     language="c++",
-    # depends=glob.glob(os.path.join("tribal.algorithms.src.genieclust_mst_src", "c_*.h")) # +
-            # glob.glob(os.path.join("tribal.algorithms.src.genieclust_mst", "*.pxd")),
 )
 
 PATH_GENIECLUST_MST = "./tribal/algorithms/src/genieclust/"

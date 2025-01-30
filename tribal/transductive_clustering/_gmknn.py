@@ -16,7 +16,7 @@ class GMKNN(GraphBasedTransductiveEstimator):
         super().__init__(k=k)
 
         self.k = k
-        self.transitional_graphs_ = {k: None for k in gmknn.transitional_graphs_types}
+        self.transitional_graphs_ = {k: None for k in GMKNN.transitional_graphs_types}
 
     def fit(self, X, y):
         super().fit(X, y)
