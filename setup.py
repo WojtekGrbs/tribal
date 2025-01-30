@@ -16,7 +16,7 @@ import re
 
 # genieclust MST-specific
 ext_kwargs = dict(
-    include_dirs=[np.get_include(), "tribal/algorithms/src/genieclust_mst_src", "../src/"],
+    include_dirs=[np.get_include(),], #"tribal/algorithms/src/genieclust_mst_src", "../src/"],
     language="c++",
     # depends=glob.glob(os.path.join("tribal.algorithms.src.genieclust_mst_src", "c_*.h")) # +
             # glob.glob(os.path.join("tribal.algorithms.src.genieclust_mst", "*.pxd")),
@@ -92,7 +92,7 @@ with open("README.md", "r") as fh:
 
 __version__ = "0.0.0"
 setuptools.setup(
-    name="placeholder",
+    name="tribal",
     license="GNU Affero General Public License v3",
     install_requires=[
         "numpy",
@@ -127,7 +127,6 @@ setuptools.setup(
         "Intended Audience :: Science/Research",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: GNU Affero General Public License v3",
-        "Development Status :: 5 - Production/Stable",
         "Topic :: Scientific/Engineering",
     ],
     cmdclass={
@@ -137,5 +136,5 @@ setuptools.setup(
     packages=setuptools.find_packages(include=["tribal*", ]),  # Automatically find packages in the current directory
     # package_dir={"": "tribal"},  # Map the root directory of packages to "tribal/"
     ext_modules=extensions_list,
-    include_dirs=[np.get_include(), "tribal/algorithms/src/genieclust_mst_src"]
+    include_dirs=[np.get_include(),] # "tribal/algorithms/src/genieclust_mst_src"]
 )

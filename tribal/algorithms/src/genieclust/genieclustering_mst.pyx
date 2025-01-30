@@ -504,6 +504,7 @@ cpdef tuple genieclust_mst(floatT[:,::1] X, str metric="euclidean"):
     max_degree = 0 
     n = len(X)
     cdef np.ndarray[Py_ssize_t] degrees = np.zeros(n, dtype=np.intp)
+    
     cdef np.ndarray[Py_ssize_t,ndim=2] mst_ind  = np.empty((n-1, 2), dtype=np.intp)
     cdef np.ndarray[floatT]         mst_dist = np.empty(n-1,
         dtype=np.float32 if floatT is float else np.float64)
