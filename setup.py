@@ -134,7 +134,7 @@ setuptools.setup(
         "sdist": genieclust_sdist,
         "build_ext": genieclust_build_ext
     },
-    packages=setuptools.find_packages(where="./tribal"),  # Automatically find packages in the current directory
+    packages=setuptools.find_packages(include=["tribal*", ]),  # Automatically find packages in the current directory
     # package_dir={"": "tribal"},  # Map the root directory of packages to "tribal/"
     ext_modules=extensions_list,
     include_dirs=[np.get_include(), "tribal/algorithms/src/genieclust_mst_src"]

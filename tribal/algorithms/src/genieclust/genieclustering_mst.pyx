@@ -512,8 +512,8 @@ cpdef tuple genieclust_mst(floatT[:,::1] X, str metric="euclidean"):
     mst_dist, mst_ind = mst_from_distance(X, metric)
 
 
-    mst_connections = GraphWrapper(n, DataType.INT64, max_deg)
-    mst_weights = GraphWrapper(n, DataType.FLOAT32, max_deg)
+    mst_connections = GraphWrapper(n, DataType.INT64, n)
+    mst_weights = GraphWrapper(n, DataType.FLOAT32, n)
 
     for i in range(n-1):
         # Non-repeating
