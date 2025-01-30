@@ -90,7 +90,7 @@ class genieclust_build_ext(build_ext):
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 setuptools.setup(
     name="tribal-temp",
     license="GNU Affero General Public License v3",
@@ -102,7 +102,8 @@ setuptools.setup(
         "scikit-learn",
         "networkx",
       ],
-      
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     download_url="https://github.com/WojtekGrbs/tribal",
     url="https://github.com/WojtekGrbs/tribal",
 
