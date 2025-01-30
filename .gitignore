@@ -1,0 +1,5 @@
+*.pyd
+*.cpp
+*.h
+__pycache__
+build/
