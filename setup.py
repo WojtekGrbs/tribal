@@ -91,6 +91,7 @@ with open("README.md", "r") as fh:
 __version__ = "0.0.1"
 setuptools.setup(
     name="tribal-temp",
+    version=__version__,
     license="GNU Affero General Public License v3",
     install_requires=[
         "numpy",
