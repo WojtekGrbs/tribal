@@ -1,5 +1,7 @@
 # [**Tribal**](https://github.com/WojtekGrbs/tribal)
 ***Tr***ansductive ***i***nference-***b***ased clustering ***al***gorithms Python package
+
+*Currently existing under the name tribal-temp, pending [PEP-541 approval from PyPi](https://github.com/pypi/support/issues/5567)* 
 ## About
 
 Transatlantic is  a Python package containing
@@ -23,7 +25,7 @@ support users in quickly deploying the algorithms in real-world projects.
 To install via `pip` (see [PyPI](https://pypi.org/project/tribal/)):
 
 ```bash
-pip install translantic_beta
+pip install tribal-temp
 ```
 The package requires Python 3.8+ with dependiences listed bellow:
 - Cython
