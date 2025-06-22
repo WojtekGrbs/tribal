@@ -88,7 +88,7 @@ class genieclust_build_ext(build_ext):
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-__version__ = "0.1.5"
+__version__ = "0.0.6"
 setuptools.setup(
     name="tribal",
     version=__version__,
