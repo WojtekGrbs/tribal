@@ -3,7 +3,7 @@
 
 ## About
 
-Transatlantic is  a Python package containing
+Tribal is  a Python package containing
 three clustering algorithms based on transductive inference for partially labeled data. The
 goal of the algorithms is to enable determining the assignment of
 input data to specific clusters based on existing labeled data.
